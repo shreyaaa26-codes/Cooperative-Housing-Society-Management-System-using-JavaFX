@@ -125,6 +125,7 @@ A modern **JavaFX-based desktop application** designed to efficiently manage res
 ## 👩‍💻 Author
 
 **Shreya L**
+
 2nd year Cyber Security Student
 Manipal Institute of Technology, Bangalore
 
