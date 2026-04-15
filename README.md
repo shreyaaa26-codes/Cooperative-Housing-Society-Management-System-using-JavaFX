@@ -1,0 +1,2 @@
+# Cooperative-Housing-Society-Management-System-using-JavaFX
+Developed a desktop-based application using JavaFX to manage housing society operations including member records, maintenance billing, and complaint tracking. The system features a real-time dashboard, structured data handling using the Singleton pattern, and dynamic UI updates via observable collections. Designed a modern user interface using CSS.
