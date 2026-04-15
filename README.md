@@ -126,14 +126,6 @@ A modern **JavaFX-based desktop application** designed to efficiently manage res
 
 **Shreya L**
 
-2nd year Cyber Security Student
-Manipal Institute of Technology, Bangalore
+2nd year Cyber Security Student MIT Bangalore
 
 ---
-
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub and feel free to contribute!
-
----
-
