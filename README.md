@@ -86,16 +86,6 @@ A modern **JavaFX-based desktop application** designed to efficiently manage res
 
 ---
 
-## 📸 Screenshots
-
-> *(Add your screenshots here)*
-
-* Dashboard View
-* Member Management
-* Maintenance Module
-* Complaint Management
-
----
 
 ## 🚀 How to Run
 
