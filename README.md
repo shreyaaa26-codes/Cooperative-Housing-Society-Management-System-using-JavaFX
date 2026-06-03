@@ -211,19 +211,222 @@ Main.java
 
 ---
 
+# ⚙️ Development Process
+
+The Cooperative Housing Society Management System was developed using JavaFX and Object-Oriented Programming principles. The project was implemented in a modular manner, where each functionality was separated into dedicated classes for better maintainability and scalability.
+
+## Step 1: Creating the Application Entry Point
+
+The development began with creating the main application class:
+
+📄 File: `Main.java`
+
+Responsibilities:
+- Launches the JavaFX application.
+- Creates the primary stage and scene.
+- Loads the stylesheet (`styles.css`).
+- Initializes the main user interface through `MainView.java`.
+
+---
+
+## Step 2: Designing the Main Layout
+
+📄 File: `MainView.java`
+
+Responsibilities:
+- Creates the overall application layout using BorderPane.
+- Implements the navigation sidebar.
+- Handles switching between modules:
+  - Dashboard
+  - Members
+  - Maintenance
+  - Complaints
+- Loads the corresponding panel when a menu option is selected.
+
+---
+
+## Step 3: Creating the Centralized Data Layer
+
+📄 File: `SocietyData.java`
+
+Responsibilities:
+- Acts as the central data repository.
+- Implements the Singleton Design Pattern.
+- Stores:
+  - Member records
+  - Maintenance records
+  - Complaint records
+- Provides utility methods for data retrieval and statistics.
+- Supplies sample data for demonstration purposes.
+
+This class ensures that all modules access a single source of truth.
+
+---
+
+## Step 4: Implementing Member Management
+
+### Data Model
+
+📄 File: `Member.java`
+
+Responsibilities:
+- Defines the member entity.
+- Stores:
+  - Flat Number
+  - Owner Name
+  - Contact Number
+  - Email
+  - Flat Type
+  - Membership Type
+  - Status
+
+### User Interface
+
+📄 File: `MemberPanel.java`
+
+Responsibilities:
+- Creates the member registration form.
+- Validates user input.
+- Prevents duplicate flat registration.
+- Displays members in a JavaFX TableView.
+- Allows toggling member status between Active and Inactive.
+
+---
+
+## Step 5: Implementing Maintenance Management
+
+### Data Model
+
+📄 File: `MaintenanceRecord.java`
+
+Responsibilities:
+- Stores maintenance billing information.
+- Tracks:
+  - Amount Due
+  - Amount Paid
+  - Payment Status
+
+Implements automatic status calculation:
+- Pending
+- Partial
+- Paid
+
+### User Interface
+
+📄 File: `MaintenancePanel.java`
+
+Responsibilities:
+- Generates maintenance bills.
+- Records maintenance payments.
+- Prevents duplicate bill generation.
+- Displays maintenance records in a table.
+- Updates payment status automatically.
+
+---
+
+## Step 6: Implementing Complaint Management
+
+### Data Model
+
+📄 File: `Complaint.java`
+
+Responsibilities:
+- Represents a complaint record.
+- Stores:
+  - Flat Number
+  - Raised By
+  - Category
+  - Description
+  - Date Raised
+  - Resolution Status
+
+### User Interface
+
+📄 File: `ComplaintPanel.java`
+
+Responsibilities:
+- Allows residents to raise complaints.
+- Categorizes complaints.
+- Tracks complaint progress.
+- Updates complaint status:
+  - Open
+  - In Progress
+  - Resolved
+
+---
+
+## Step 7: Building the Dashboard
+
+📄 File: `DashboardPanel.java`
+
+Responsibilities:
+- Displays key society statistics.
+- Calculates:
+  - Total Members
+  - Active Members
+  - Pending Maintenance
+  - Open Complaints
+- Shows recent maintenance records.
+- Shows recent complaints.
+
+The dashboard provides a quick overview of the entire society.
+
+---
+
+## Step 8: Designing the User Interface
+
+📄 File: `styles.css`
+
+Responsibilities:
+- Implements a modern dark-themed design.
+- Styles:
+  - Sidebar
+  - Dashboard Cards
+  - Forms
+  - Tables
+  - Buttons
+  - Status Indicators
+
+This improves usability and provides a professional appearance.
+
+---
+
+## Step 9: Testing and Validation
+
+The application was tested module-by-module to ensure:
+
+✅ Member registration validation
+
+✅ Duplicate prevention
+
+✅ Maintenance status calculation
+
+✅ Complaint status updates
+
+✅ Dashboard statistics accuracy
+
+✅ Navigation between modules
+
+---
+
+## Final Outcome
+
+The final system successfully integrates all modules into a single JavaFX desktop application capable of managing society members, maintenance billing, and complaints through a centralized and user-friendly interface.
+
+---
 # 📸 Screenshots
 
 ## Dashboard
-<img width="100%" alt="Dashboard" src=""C:\Users\lokesh.ck\Desktop\SHREYA\SEM - IV\OOSD Lab\Screenshots\Dashboard.png"">
+<img width="100%" alt="Dashboard" src="Screenshots/Dashboard.png">
 
 ## Member Management
-<img width="100%" alt="Members" src=""C:\Users\lokesh.ck\Desktop\SHREYA\SEM - IV\OOSD Lab\Screenshots\Member Management.png"">
+<img width="100%" alt="Members" src="Screenshots/Member Management">
 
 ## Maintenance Management
-<img width="100%" alt="Maintenance" src=""C:\Users\lokesh.ck\Desktop\SHREYA\SEM - IV\OOSD Lab\Screenshots\Maintainance Management.png"">
+<img width="100%" alt="Maintenance" src="Screenshots/Maintainance Management">
 
 ## Complaint Management
-<img width="100%" alt="Complaints" src=""C:\Users\lokesh.ck\Desktop\SHREYA\SEM - IV\OOSD Lab\Screenshots\Complaint Management.png"">
+<img width="100%" alt="Complaints" src="Screenshots/Complaint Management">
 
 ---
 
