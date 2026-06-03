@@ -227,8 +227,6 @@ Responsibilities:
 - Loads the stylesheet (`styles.css`).
 - Initializes the main user interface through `MainView.java`.
 
----
-
 ## Step 2: Designing the Main Layout
 
 📄 File: `MainView.java`
@@ -242,8 +240,6 @@ Responsibilities:
   - Maintenance
   - Complaints
 - Loads the corresponding panel when a menu option is selected.
-
----
 
 ## Step 3: Creating the Centralized Data Layer
 
@@ -260,8 +256,6 @@ Responsibilities:
 - Supplies sample data for demonstration purposes.
 
 This class ensures that all modules access a single source of truth.
-
----
 
 ## Step 4: Implementing Member Management
 
@@ -290,8 +284,6 @@ Responsibilities:
 - Prevents duplicate flat registration.
 - Displays members in a JavaFX TableView.
 - Allows toggling member status between Active and Inactive.
-
----
 
 ## Step 5: Implementing Maintenance Management
 
@@ -322,8 +314,6 @@ Responsibilities:
 - Displays maintenance records in a table.
 - Updates payment status automatically.
 
----
-
 ## Step 6: Implementing Complaint Management
 
 ### Data Model
@@ -353,8 +343,6 @@ Responsibilities:
   - In Progress
   - Resolved
 
----
-
 ## Step 7: Building the Dashboard
 
 📄 File: `DashboardPanel.java`
@@ -370,8 +358,6 @@ Responsibilities:
 - Shows recent complaints.
 
 The dashboard provides a quick overview of the entire society.
-
----
 
 ## Step 8: Designing the User Interface
 
@@ -389,8 +375,6 @@ Responsibilities:
 
 This improves usability and provides a professional appearance.
 
----
-
 ## Step 9: Testing and Validation
 
 The application was tested module-by-module to ensure:
@@ -407,8 +391,6 @@ The application was tested module-by-module to ensure:
 
 ✅ Navigation between modules
 
----
-
 ## Final Outcome
 
 The final system successfully integrates all modules into a single JavaFX desktop application capable of managing society members, maintenance billing, and complaints through a centralized and user-friendly interface.
@@ -420,13 +402,13 @@ The final system successfully integrates all modules into a single JavaFX deskto
 <img width="100%" alt="Dashboard" src="Screenshots/Dashboard.png">
 
 ## Member Management
-<img width="100%" alt="Members" src="Screenshots/Member Management">
+<img width="100%" alt="Members" src="Screenshots/Member Management.png">
 
 ## Maintenance Management
-<img width="100%" alt="Maintenance" src="Screenshots/Maintainance Management">
+<img width="100%" alt="Maintenance" src="Screenshots/Maintainance Management.png">
 
 ## Complaint Management
-<img width="100%" alt="Complaints" src="Screenshots/Complaint Management">
+<img width="100%" alt="Complaints" src="Screenshots/Complaint Management.png">
 
 ---
 
